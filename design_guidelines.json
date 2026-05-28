@@ -1,0 +1,153 @@
+{
+  "theme": "Light",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "vibe": "Objective, rigid, functional, professional",
+  "colors": {
+    "background": {
+      "primary": "#FFFFFF",
+      "secondary": "#F3F4F6",
+      "tertiary": "#E5E7EB"
+    },
+    "text": {
+      "primary": "#0A0A0A",
+      "secondary": "#4B5563",
+      "tertiary": "#9CA3AF",
+      "on_brand": "#FFFFFF"
+    },
+    "brand": {
+      "primary": "#2563EB",
+      "primary_hover": "#1D4ED8",
+      "accent": "#F59E0B"
+    },
+    "status": {
+      "success": "#16A34A",
+      "warning": "#D97706",
+      "error": "#DC2626"
+    },
+    "border": {
+      "default": "#E5E7EB",
+      "focus": "#93C5FD"
+    },
+    "rules": [
+      "95% of the UI should be monochrome.",
+      "Color exists only to guide action.",
+      "Never use pure #000000 or #808080. Tint neutrals slightly.",
+      "No full-screen gradients; texture > gloss."
+    ]
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Clash Display', 'Cabinet Grotesk', sans-serif",
+      "body": "'IBM Plex Sans', 'Manrope', sans-serif",
+      "mono": "'JetBrains Mono', 'IBM Plex Mono', monospace"
+    },
+    "scales": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-black",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl tracking-tight font-semibold",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm",
+      "label": "text-xs uppercase tracking-[0.2em] font-semibold"
+    },
+    "rules": [
+      "Headings (Size > 32px) MUST use tight letter spacing.",
+      "Overlines / Labels MUST be Uppercase + Tiny + Wide Spacing.",
+      "Line Height: Tight for headers, Loose for body.",
+      "Never use Inter for headings."
+    ]
+  },
+  "spacing_and_layout": {
+    "generous_spacing": true,
+    "dashboard_grid": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 or gap-6",
+    "landing_grid": "grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8 to gap-12",
+    "surface_strategy": "Grid Borders (The 'Technical' Look) for Data-heavy Dashboards and Features Sections.",
+    "container_padding": "Containers with borders must have internal padding (p-6 or p-8) to prevent text collision.",
+    "border_radius": "Sharp edges or subtle roundness, max 8px (rounded-md).",
+    "rules": [
+      "Mobile-First: Always start with grid-cols-1.",
+      "Grid items must be direct children.",
+      "Override default stretch behavior on grid with align-items: start where necessary."
+    ]
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-blue-600 text-white hover:bg-blue-700 transition-colors rounded-md font-medium px-6 py-2",
+      "secondary": "bg-white border border-gray-200 text-gray-900 hover:bg-gray-50 transition-colors rounded-md font-medium px-6 py-2",
+      "ghost": "bg-transparent text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors rounded-md font-medium px-4 py-2"
+    },
+    "cards": {
+      "default": "bg-white border border-gray-200 rounded-md p-6",
+      "hover": "hover:-translate-y-1 hover:shadow-lg hover:border-gray-300 transition-all duration-200"
+    },
+    "inputs": {
+      "default": "bg-white border border-gray-200 rounded-md px-4 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+    },
+    "tags": {
+      "default": "bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium border border-gray-200"
+    },
+    "rules": [
+      "Use Shadcn UI components for complex interactions but heavily customize to match the Swiss archetype (sharp, high contrast).",
+      "Do NOT overuse card component. Go cardless, rectangular, dense styles where appropriate.",
+      "All interactive elements MUST have a data-testid attribute."
+    ]
+  },
+  "media": {
+    "image_urls": [
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/e22143ca-d3cc-437f-92f2-0a407a71d5a4/images/65b38e6c3063f744c663184429441ba44d11938a46cd2a6575c05c9fd452fe8a.png",
+        "category": "hero",
+        "description": "Abstract AI resume to network transformation for landing page hero background/illustration."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB1c2VyJTIwYXZhdGFyJTIwc21pbGluZ3xlbnwwfHx8fDE3Nzk5MzkzODl8MA&ixlib=rb-4.1.0&q=85",
+        "category": "avatar",
+        "description": "Smiling professional user avatar for dashboard profile."
+      },
+      {
+        "url": "https://images.pexels.com/photos/20716644/pexels-photo-20716644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "logo_app",
+        "description": "Minimalist modern app logo image to use as a placeholder or abstract brand representation."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1654277040981-82984a49c63a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxjb21wYW55JTIwbG9nbyUyMGJyYW5kJTIwaWNvbnxlbnwwfHx8fDE3Nzk5MzkzOTh8MA&ixlib=rb-4.1.0&q=85",
+        "category": "company_logo_1",
+        "description": "HP company logo for job listing."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1751459422184-e0554bb8db0b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxjb21wYW55JTIwbG9nbyUyMGJyYW5kJTIwaWNvbnxlbnwwfHx8fDE3Nzk5MzkzOTh8MA&ixlib=rb-4.1.0&q=85",
+        "category": "company_logo_2",
+        "description": "Telegram company logo for job listing."
+      },
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/e22143ca-d3cc-437f-92f2-0a407a71d5a4/images/47f03d3896ace8c72c7747c0e90772313f2d7d94c8a52c9caceafb04ff15c614.png",
+        "category": "company_logo_3",
+        "description": "Abstract green tech company logo for job listing."
+      },
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/e22143ca-d3cc-437f-92f2-0a407a71d5a4/images/b3eff275d2742554a0293cfc647f64f4a0ee04f07abf89cd31cbec84ed989348.png",
+        "category": "company_logo_4",
+        "description": "Abstract blue tech company logo for job listing."
+      },
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/e22143ca-d3cc-437f-92f2-0a407a71d5a4/images/9987dead7334847270c96927f1298b1376a870d0ba4172943d055e1f96102e52.png",
+        "category": "company_logo_5",
+        "description": "Abstract purple tech company logo for job listing."
+      }
+    ],
+    "icons_library": "lucide-react"
+  },
+  "accessibility_and_motion": {
+    "motion": "Minimalist — use micro-interactions for feedback. Fast transitions (0.2s).",
+    "accessibility": "Minimum 4.5:1 contrast ratio for normal text. Use aria-hidden on decorative elements. Support prefers-reduced-motion."
+  },
+  "instructions_to_main_agent": [
+    "Build the application using React (.js/jsx) and Tailwind CSS.",
+    "Follow the theme and color scheme strictly. Do not introduce generic SaaS blue for everything; stick to the monochromatic base with Electric Blue (#2563EB) accents.",
+    "Implement the landing page using the 'Tetris' grid layout logic and the dashboard using the 'Control Room' dense grid.",
+    "For the job search functionality, create a dedicated drag-and-drop zone for Resume Upload (PDF/DOCX) with clear visual feedback.",
+    "Use the provided image URLs for the hero section, user avatars, and company logos in the job listings.",
+    "Ensure ALL interactive elements and key information areas include a data-testid attribute formatted in kebab-case based on role.",
+    "The header must have a background (solid or glassmorphism) if sticky, and should not use generic transparent backgrounds over content."
+  ]
+}

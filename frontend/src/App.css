@@ -1,0 +1,52 @@
+.App {
+  min-height: 100vh;
+}
+
+.landing-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.job-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+}
+
+.resume-dropzone {
+  border: 2px dashed #E5E7EB;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.resume-dropzone:hover {
+  border-color: #2563EB;
+  background-color: #F3F4F6;
+}
+
+.resume-dropzone.dragover {
+  border-color: #2563EB;
+  background-color: #EFF6FF;
+}
+
+.match-score-high {
+  color: #16A34A;
+}
+
+.match-score-medium {
+  color: #F59E0B;
+}
+
+.match-score-low {
+  color: #DC2626;
+}
+
+.skill-tag {
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.skill-tag:hover {
+  background-color: #E5E7EB;
+  border-color: #9CA3AF;
+}
